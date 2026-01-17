@@ -30,7 +30,7 @@ const About = () => {
               </div>
               <p className="text-muted-foreground">
                 This portfolio is hosted on <strong className="text-foreground">AWS EC2</strong> with{" "}
-                <strong className="text-foreground">Docker</strong> containers—a testament to my 
+                <strong className="text-foreground">Docker</strong> containers, a testament to my 
                 hands-on cloud infrastructure experience and commitment to modern deployment practices.
               </p>
             </div>
