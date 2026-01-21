@@ -13,7 +13,7 @@ const experiences: ExperienceItem[] = [
     title: "IT Coordinator",
     company: "LEORON Institute",
     period: "2025 - Present",
-    location: "Skopje, North Macedonia",
+    location: "Skopje, Macedonia",
     responsibilities: [
       "Coordinate IT resources and ensure efficiency across departments",
       "Oversee technical documentation and analytical troubleshooting",
@@ -24,7 +24,7 @@ const experiences: ExperienceItem[] = [
     title: "System Administrator",
     company: "Mozzart Bet",
     period: "2024 - 2025",
-    location: "Skopje, North Macedonia",
+    location: "Skopje, Macedonia",
     responsibilities: [
       "Managed Microsoft 365 administration and user accounts",
       "Maintained system infrastructure and network operations",
@@ -35,7 +35,7 @@ const experiences: ExperienceItem[] = [
     title: "System Engineer",
     company: "Web Factory",
     period: "2024",
-    location: "Skopje, North Macedonia",
+    location: "Skopje, Macedonia",
     responsibilities: [
       "Configured and maintained Ubiquiti network equipment",
       "Implemented system solutions and network infrastructure",
@@ -46,7 +46,7 @@ const experiences: ExperienceItem[] = [
     title: "IT Technician",
     company: "Zlatna Kopacka",
     period: "2023 - 2024",
-    location: "Skopje, North Macedonia",
+    location: "Skopje, Macedonia",
     responsibilities: [
       "Provided technical support for IT infrastructure",
       "Maintained hardware and software systems",
@@ -57,7 +57,7 @@ const experiences: ExperienceItem[] = [
     title: "Drone Operator & Product Developer",
     company: "Talent Business Incubator",
     period: "2022 - 2023",
-    location: "Skopje, North Macedonia",
+    location: "Skopje, Macedonia",
     responsibilities: [
       "Operated drone technology for various projects",
       "Developed and refined product concepts",

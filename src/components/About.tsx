@@ -8,7 +8,7 @@ const About = () => {
           </h2>
           
           <div className="bg-card rounded-2xl p-8 lg:p-12 shadow-lg border border-border">
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">I'm an IT Coordinator and System Administrator based in Skopje, North Macedonia. With a strong hands-on experience across various IT roles, I specialize in managing IT infrastructure, optimizing system operations, and implementing efficient technological solutions. <strong className="text-foreground">Skopje, North Macedonia</strong>. 
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">I'm an IT Coordinator and System Administrator based in Skopje, Macedonia. With a strong hands-on experience across various IT roles, I specialize in managing IT infrastructure, optimizing system operations, and implementing efficient technological solutions. <strong className="text-foreground">Skopje, North Macedonia</strong>. 
               With a strong foundation in software engineering and hands-on experience across various IT roles, 
               I specialize in managing IT infrastructure, optimizing system operations, and implementing 
               efficient technological solutions.
@@ -39,7 +39,7 @@ const About = () => {
             <div className="grid sm:grid-cols-3 gap-4">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span>Skopje, North Macedonia</span>
+                <span>Skopje, Macedonia</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="w-5 h-5 text-primary" />
