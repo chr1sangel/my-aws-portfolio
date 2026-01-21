@@ -51,7 +51,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">
         <ChevronDown className="w-6 h-6 text-muted-foreground" />
       </div>
     </section>;
