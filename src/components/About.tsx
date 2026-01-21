@@ -8,7 +8,7 @@ const About = () => {
           </h2>
           
           <div className="bg-card rounded-2xl p-8 lg:p-12 shadow-lg border border-border">
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">I'm an IT Coordinator and System Administrator based in Skopje, Macedonia. With a strong hands-on experience across various IT roles, I specialize in managing IT infrastructure, optimizing system operations, and implementing efficient technological solutions. <strong className="text-foreground">Skopje, North Macedonia</strong>. 
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">Skopje, Macedonia <strong className="text-foreground">Skopje, North Macedonia</strong>. 
               With a strong foundation in software engineering and hands-on experience across various IT roles, 
               I specialize in managing IT infrastructure, optimizing system operations, and implementing 
               efficient technological solutions.
