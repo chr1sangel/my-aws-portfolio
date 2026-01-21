@@ -56,7 +56,7 @@ const Contact = () => {
               <div className="text-center">
                 <p className="text-sm text-muted-foreground mb-1">Location</p>
                 <p className="font-medium text-foreground">
-                  Skopje, North Macedonia
+                  Skopje, Macedonia
                 </p>
               </div>
             </div>
