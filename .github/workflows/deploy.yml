@@ -1,0 +1,52 @@
+name: Deploy CV Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  # --- Phase 1: Build and Push to Docker Hub ---
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      # IMPORTANT: Change 'yourdockerhubusername' below!
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: yourdockerhubusername/cv-site:latest
+
+  # --- Phase 2: Deploy to AWS EC2 ---
+  deploy:
+    needs: build-and-push # This tells GitHub to wait until the build is finished!
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute remote SSH commands
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            # 1. Pull the newly built image from Docker Hub
+            # IMPORTANT: Change 'yourdockerhubusername' below!
+            docker pull yourdockerhubusername/cv-site:latest
+            
+            # 2. Stop and remove the currently running container (ignore errors if it's not running)
+            docker stop cv-site || true
+            docker rm cv-site || true
+            
+            # 3. Start the new container
+            # Assuming your app runs on port 80. Adjust the -p numbers if needed!
+            docker run -d --name cv-site -p 80:80 yourdockerhubusername/cv-site:latest
